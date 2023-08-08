@@ -1,0 +1,19 @@
+int pixelsize = 3;
+int gridsize  = pixelsize * 9 + 5;
+Player player;
+ArrayList vehicles = new ArrayList();
+ArrayList bullets = new ArrayList();
+int direction = 1;
+int score = 0;
+PFont f; //loads font
+PImage bg; //load background image
+
+void setup() {
+    bg = loadImage("bg.jpeg");
+    noStroke();
+    size(1024,1240);
+    player = new Player();
+    createVehicles();
+
+    f = createFont("Arial", 36, true);
+}
