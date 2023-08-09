@@ -1,3 +1,0 @@
-class Tank {
-  int x, y;
-  
